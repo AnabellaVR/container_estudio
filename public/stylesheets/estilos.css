@@ -5,17 +5,34 @@ footer {
 }
 
 .hero {
-  background: url(../img/78c89e28ce033700df86f729a0a087d9.jpg) no-repeat center center;
+  background: url(../img/78c89e28ce033700df86f729a0a087d9.jpg) no-repeat center top;
+  background-position: center -780px;
   background-size: cover;
-  min-height: 900px;
+  height: 110vh;
   color: black;
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
 }
 
+/* Ajustes para pantallas más chicas (celulares/tablets) */
+@media (max-width: 768px) {
+  .hero {
+    background-position: center;
+    height: 80vh;
+  }
+  .hero p {
+  font-size: 1rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+}
+
+
 .hero-texto {
-  margin-top: 240px;
+  margin-top: 0px;
   color: aliceblue;
 }
 
